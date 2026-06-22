@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona - Layout</title>
+    <style>
+        /* Guud ahaan habaynta bogga */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Shaxda weyn ee buraashka cagaaran */
+        .main-container {
+            background-color: #fff;
+            border: 5px solid #008000; 
+            padding: 8px;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        /* Qaybta Sare ee Ciwaanka (Header) */
+        .header-section {
+            background-color: #a9d1f5; 
+            border: 3px solid #ffd700; 
+            text-align: center;
+            padding: 10px 5px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+
+        .header-section h1 {
+            margin: 0;
+            font-size: 22px; 
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Qaybta dhexda ah (Saddexda tiir oo isku garab taagan) */
+        .middle-section {
+            display: flex;
+            margin-bottom: 8px;
+            gap: 2px; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Tiirka 1aad: Menu-ka bidix (Sidebar) */
+        .sidebar {
+            border: 1px solid #000000; 
+            padding: 5px;
+            width: 18%; 
+            box-sizing: border-box;
+            word-break: break-all;
+        }
+
+        .sidebar a {
+            color: #0000ff;
+            text-decoration: underline;
+            font-size: 11px;
+            display: inline-block;
+            margin-right: 3px;
+        }
+
+        /* Tiirka 2aad: Sanduuqa dhexda (Main Content) */
+        .content-box {
+            border: 1px solid #000000; 
+            padding: 5px;
+            width: 44%; 
+            box-sizing: border-box;
+        }
+
+        /* Qaybta sawirka iyo qoraalka */
+        .flag-and-text {
+            display: flex;
+            gap: 5px;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        /* Habaynta Sawirka Barcelona Crest */
+        .barca-crest {
+            width: 45%; 
+            aspect-ratio: 1 / 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .barca-crest img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Qoraalka xogta */
+        .text-container {
+            font-size: 9px; 
+            line-height: 1.2;
+            color: #000;
+            text-align: left;
+        }
+
+        /* Tiirka 3aad: Shaxda midig (Table) */
+        .table-container {
+            width: 38%;
+            box-sizing: border-box;
+            border: 1px solid #000000; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #808080; 
+            padding: 3px 2px;
+            font-size: 8px; 
+            color: #000000;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        /* Qaybta Hoose (Footer) */
+        .footer-section {
+            border: 3px solid #ffd700; 
+            text-align: center;
+            padding: 8px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #000;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="header-section">
+            <h1>FC Barcelona</h1>
+        </div>
+
+        <div class="middle-section">
+            
+            <div class="sidebar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </div>
+
+            <div class="content-box">
+                <div class="flag-and-text">
+                    <div class="barca-crest">
+                        <img src="Barcelona.jpg" alt="FC Barcelona Crest">
+                    </div>
+                    <div class="text-container">
+                        FC Barcelona waa mid ka mid ah kooxaha ugu caansan dunida, waxaana la aas-aasay 29-kii Nofeembar 1899.
+                    </div>
+                </div>
+                <div class="text-container">
+                    Kooxdu waxay caan ku tahay ciyaartii tiki-taka ee ay hormuudka u ahaayeen Xavi, Iniesta iyo Messi. Hal-ku-dheggeedu waa “Més que un club”.
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aas-aase</th>
+                            <th>Garoonka</th>
+                            <th>Koobabka UCL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Joan Gamper</td>
+                            <td>Camp Nou</td>
+                            <td>5 Koob</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="font-weight: bold; text-align: center; background-color: #f2f2f2;">
+                                Dalka: Spain | Horyaalka: La Liga
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="footer-section">
+            &copy; Més que un club
+        </div>
+        
+    </div>
+
+</body>
+</html>
